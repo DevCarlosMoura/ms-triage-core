@@ -10,6 +10,6 @@ public class MsTriageCoreApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MsTriageCoreApplication.class, args);
-	}
+	} 
 
 }

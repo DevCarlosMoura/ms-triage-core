@@ -14,4 +14,6 @@ public interface TriageProfileClient {
     @GetMapping("/{id}")
     ResponseEntity<TriageProfileDTO> getTriageProfileById(@PathVariable("id") UUID id);
 
+    @GetMapping("/by-sku/{sku}")
+    ResponseEntity<TriageProfileDTO> getProfileBySku(@PathVariable ("sku") String sku);
 }
