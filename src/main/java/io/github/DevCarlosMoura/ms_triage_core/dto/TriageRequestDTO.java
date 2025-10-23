@@ -1,12 +1,12 @@
-package io.github.DevCarlosMoura.mstriagecore.dto; // Adjusted package name
+package io.github.DevCarlosMoura.mstriagecore.dto;
 
 import java.util.List;
 
-import lombok.Data; // Added import for List
+import lombok.Data; 
 
 @Data
 public class TriageRequestDTO {
     private String productSku;
-    private List<String> reportedIssues; // Added List<String> type
+    private List<String> reportedIssues; 
     private String origin;
 }

@@ -1,7 +1,7 @@
-package io.github.DevCarlosMoura.mstriagecore.dto; // Adjusted to match controller/client package name
+package io.github.DevCarlosMoura.mstriagecore.dto; 
 
 import java.time.LocalDateTime;
-import java.util.List; // Correct import (already present)
+import java.util.List; 
 import java.util.UUID;
 
 import lombok.Data;
@@ -10,8 +10,8 @@ import lombok.Data;
 public class TriageProfileDTO {
     private UUID id;
     private String productSku;
-    private List<String> componentChecklist; // Corrected: Uppercase 'S' in String, lowercase 'l' in checklist
+    private List<String> componentChecklist; 
     private List<String> criticalAnalysisPoints;
-    private LocalDateTime createdAt; // Corrected: LocalDateTime
-    private LocalDateTime updatedAt; // Corrected: LocalDateTime
+    private LocalDateTime createdAt; 
+    private LocalDateTime updatedAt;
 }

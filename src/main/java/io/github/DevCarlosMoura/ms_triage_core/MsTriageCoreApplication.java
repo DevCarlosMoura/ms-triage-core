@@ -1,4 +1,4 @@
-package io.github.DevCarlosMoura.mstriagecore; // Removed underscore
+package io.github.DevCarlosMoura.mstriagecore;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
