@@ -1,5 +1,7 @@
 package io.github.DevCarlosMoura.ms_triage_core.client;
 
+import org.springframework.web.bind.annotation.GetMapping;
+
 import io.github.DevCarlosMoura.ms_triage_core.dto.TriageProfileDTO;\
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
@@ -13,5 +15,8 @@ public interface TriageProfileClient {
 
     @GetMapping("/{id}")
     ResponseEntity<TriageProfileDTO> getTriageProfileById(@PathVariable("id") UUID id);
+
+    @GetMapping("/by-sku/{sku}")
+    ResponseEntity<TriageProfileDTO> getTriageProfileBySku(@PathVariable("sku") String sku);
 
 }
