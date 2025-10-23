@@ -1,16 +1,17 @@
-package io.github.DevCarlosMoura.ms_triage_core.dto;
+package io.github.DevCarlosMoura.mstriagecore.dto; // Adjusted to match controller/client package name
+
+import java.time.LocalDateTime;
+import java.util.List; // Correct import (already present)
+import java.util.UUID;
 
 import lombok.Data;
-import java.time.LocalDateTime;
-import java.util.List;
-import java.util.UUID;
+
 @Data
 public class TriageProfileDTO {
     private UUID id;
     private String productSku;
-    private List<string> componentCheckList;
+    private List<String> componentChecklist; // Corrected: Uppercase 'S' in String, lowercase 'l' in checklist
     private List<String> criticalAnalysisPoints;
-    private LocalDataTime createdAt;
-    private LocalDataTime updatedAt;
-
+    private LocalDateTime createdAt; // Corrected: LocalDateTime
+    private LocalDateTime updatedAt; // Corrected: LocalDateTime
 }
